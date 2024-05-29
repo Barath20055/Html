@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title> One Piece</title>
     </head>
@@ -28,5 +28,51 @@
         </ul>
 
         <img src="one piece2.jpg" style="width:600px;height:500px;">
+
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px 12px;
+                border: 1px solid #ccc;
+                text-align: left;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/submit" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th>PIRATES</th>
+                        <th>HEROS</th>
+                        <th>VILLANS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="data1" placeholder="Type here"></td>
+                        <td><input type="text" name="data2" placeholder="Type here"></td>
+                        <td><textarea name="data3" placeholder="Type here"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="data4" placeholder="Type here"></td>
+                        <td><input type="text" name="data5" placeholder="Type here"></td>
+                        <td><textarea name="data6" placeholder="Type here"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="data7" placeholder="Type here"></td>
+                        <td><input type="text" name="data8" placeholder="Type here"></td>
+                        <td><textarea name="data9" placeholder="Type here"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
